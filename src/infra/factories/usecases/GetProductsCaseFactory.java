@@ -8,6 +8,6 @@ import infra.repositories.GetProductsRepository;
 
 public class GetProductsCaseFactory {
 	public ArrayList<Product> build() {
-		return new GetProductsCase(new GetProductsRepository()).execute();
+		return new GetProductsCase(GetProductsRepository.getInstance()).execute();
 	}
 }
